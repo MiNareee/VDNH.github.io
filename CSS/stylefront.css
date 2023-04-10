@@ -240,7 +240,7 @@ color: #FFFFFF;
 	font-size: 30px;
 	line-height: 40px;
 	color: #000000;
-	padding:67px 0px 0px 19px;
+	padding:0px 0px 67px 19px;
 }
 .card-img {
     border-radius: 31px;
@@ -253,7 +253,7 @@ color: #FFFFFF;
 	width: 431px;
 	height: 551px;
 	border-radius: 30px;
-	padding:24px;
+	padding:0px 24px 24px 0px;
 	
 }
 .frame{
