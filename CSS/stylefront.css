@@ -242,10 +242,8 @@ color: #FFFFFF;
 	color: #000000;
 	padding-top: 67px;
 }
-.product{
-border-radius: 31px;
-width: 384.85px;
-height: 290.82px;
+.product {
+    border-radius: 31px;
 }
 .card{
 	background-color:#CDAA9B;
