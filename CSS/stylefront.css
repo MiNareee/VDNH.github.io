@@ -254,6 +254,7 @@ color: #FFFFFF;
 	margin.top: 65px;
 }
 .card{
+	padding:24px;
 	width: 431px;
 	height: 551px;
 	background: rgba(205, 170, 155, 0.8);
