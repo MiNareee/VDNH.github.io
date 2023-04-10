@@ -242,7 +242,7 @@ color: #FFFFFF;
 	color: #000000;
 	padding-top: 67px;
 }
-.product {
+.card-img {
     border-radius: 31px;
 }
 .card{
@@ -256,12 +256,12 @@ color: #FFFFFF;
 }
 .frame{
 	background-color:#EDC8C8;
-	padding: 385.43px 5.75px;
+	padding: 5.75px 385.43px;
 	border-radius: 2px;
 	margin-top: 0.05px;
 
 }
-.info{
+.card-title{
 	width: 381.16px;
         height: 32.42px;
 	margin-top: 18.12px;
@@ -273,7 +273,7 @@ color: #FFFFFF;
 	text-align: center;
 	color: #000000;
 }
-.info1{
+.card-sub{
 	width: 412.96px;
         height: 110.25px;
 	margin-top: 20px;
