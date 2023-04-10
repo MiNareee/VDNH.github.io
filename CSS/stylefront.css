@@ -248,8 +248,6 @@ color: #FFFFFF;
 	height: 290.82px;
 	margin-left:5px;
 }
-.cards{
-	padding:0px 24px 24px 0px
 }
 .card{
 	background-color:#CDAA9B;
@@ -257,6 +255,7 @@ color: #FFFFFF;
 	height: 551px;
 	border-radius: 30px;
 	margin-left:60px;
+	padding:20px;
 	
 }
 .frame{
