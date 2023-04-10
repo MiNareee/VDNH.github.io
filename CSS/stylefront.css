@@ -260,6 +260,8 @@ color: #FFFFFF;
 	border-radius: 30px;
 }
 .card_image{
+	margin-left: auto;
+	margin-right: auto;
 	width: 384.85px;
 	height: 290.82px;
 	border-radius: 31px;
