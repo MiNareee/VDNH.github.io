@@ -242,6 +242,49 @@ color: #FFFFFF;
 	color: #000000;
 	padding-top: 67px;
 }
+.product{
+border-radius: 31px;
+width: 384.85px;
+height: 290.82px;
+}
+.card{
+	background-color:rgba(205, 170, 155, 0.8);
+	width: 431px;
+	height: 551px;
+	border-radius: 30px;
 
 	
+}
+.frame{
+	background-color:#EDC8C8;
+	padding: 385.43px 5.75px;
+	border-radius: 2px;
+	margin-top: 0.05px;
+
+}
+.info{
+	width: 381.16px;
+        height: 32.42px;
+	margin-top: 18.12px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+	text-align: center;
+	color: #000000;
+}
+.info1{
+	width: 412.96px;
+        height: 110.25px;
+	margin-top: 20px;
+	font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13.83px;
+        line-height: 22px;
+        text-align: center;
+
+color: #000000;
+
 }
