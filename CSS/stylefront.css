@@ -241,6 +241,7 @@ color: #FFFFFF;
 	line-height: 40px;
 	color: #000000;
 	padding-top: 67px;
+	margin-left:19px
 }
 .card-img {
     border-radius: 31px;
@@ -253,7 +254,7 @@ color: #FFFFFF;
 	height: 551px;
 	border-radius: 30px;
 	padding:20px;
-	margin-right:62px
+	margin-left:62px
 
 	
 }
