@@ -244,12 +244,13 @@ color: #FFFFFF;
 }
 .cards{
 	margin: 0;
-	padding: 24px;
+	padding: 0;
 	list-style-type: none;
 	display: flex;
 	
 }
 .cards_ite{
+	padding: 24px;
 }
 .cards_ite:not(:last-child){
 	margin.right: 65px;
