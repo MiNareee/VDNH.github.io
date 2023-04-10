@@ -293,3 +293,7 @@ color: #FFFFFF;
 color: #000000;
 
 }
+.cards_iteam: not(:last-child){
+	margin-right:24px;
+}
+	
