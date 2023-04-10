@@ -275,3 +275,33 @@ color: #FFFFFF;
 .card_content{
 	padding: 20px;
 }
+.card-title{
+	width: 381.16px;
+	height: 32.42px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+
+}
+.card-sub{
+width: 412.96px;
+height: 110.25px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: #000000;
+}
+.frame{
+	background-color:#EDC8C8;
+	width: 385.43px;
+	height: 5.75px;
+	border-radius: 2px;
+
+}
