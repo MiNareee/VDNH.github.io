@@ -247,6 +247,7 @@ color: #FFFFFF;
     border-radius: 31px;
 	width: 384.85px;
 	height: 290.82px;
+	margin-left:5px;
 }
 .card{
 	background-color:#CDAA9B;
@@ -254,7 +255,8 @@ color: #FFFFFF;
 	height: 551px;
 	border-radius: 30px;
 	padding:20px;
-	margin-left:62px
+	margin-left:62px;
+	margin-top: 77px;
 
 	
 }
@@ -288,6 +290,7 @@ color: #FFFFFF;
         font-size: 13.83px;
         line-height: 22px;
         text-align: center;
+	margin-left:5px;
 
 color: #000000;
 
