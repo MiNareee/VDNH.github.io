@@ -250,7 +250,7 @@ color: #FFFFFF;
 	
 }
 .cards_ite{
-	padding: 24px;
+	padding: 12px;
 }
 .cards_ite:not(:last-child){
 	margin.right: 65px;
