@@ -240,7 +240,7 @@ color: #FFFFFF;
 	font-size: 30px;
 	line-height: 40px;
 	color: #000000;
-	padding:0px 0px 67px 19px;
+	/*padding:0px 0px 67px 19px;/*
 }
 .cards{
 	margin: 0;
@@ -251,7 +251,6 @@ color: #FFFFFF;
 }
 .cards_ite:not(:last-child){
 	margin.right: 24px;
-	margin-top: 24px;
 }
 .card{
 	width: 431px;
