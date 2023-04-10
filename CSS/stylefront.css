@@ -243,17 +243,19 @@ color: #FFFFFF;
 	padding:0px 0px 67px 19px;
 }
 .card-img {
-    border-radius: 31px;
+        border-radius: 31px;
 	width: 384.85px;
 	height: 290.82px;
 	margin-left:5px;
+}
+.cards{
+	padding:0px 24px 24px 0px
 }
 .card{
 	background-color:#CDAA9B;
 	width: 431px;
 	height: 551px;
 	border-radius: 30px;
-	padding:0px 24px 24px 0px;
 	
 }
 .frame{
