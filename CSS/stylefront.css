@@ -259,7 +259,8 @@ color: #FFFFFF;
 }
 .frame{
 	background-color:#EDC8C8;
-	padding: 5.75px 385.43px;
+	width: 385.43px;
+	height: 5.75px;
 	border-radius: 2px;
 	margin-top: 0.05px;
 
