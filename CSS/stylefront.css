@@ -250,8 +250,8 @@ color: #FFFFFF;
 	
 }
 .cards_ite:not(:last-child){
-	margin.right: 46px;
-	margin.top: 46px;
+	margin.right: 65px;
+	margin.top: 65px;
 }
 .card{
 	width: 431px;
