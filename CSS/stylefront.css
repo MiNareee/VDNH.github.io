@@ -336,7 +336,7 @@ padding: 70px 20px 0px 64px;
 	
 }
 .group{
-	margin-right: 500px;
+	padding: 70px 20px 0px 64px;
 }
 
 .klick:disabled):not(:checked)+label:hover::before {
