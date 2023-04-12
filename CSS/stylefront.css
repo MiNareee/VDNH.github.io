@@ -343,7 +343,7 @@ padding: 70px 20px 0px 64px;
   border-color: #b3d7ff;
 }
 /* стили для активного состояния чекбокса (при нажатии на него) */
-.custom-checkbox:not(:disabled):active+label::before {
+.klick:not(:disabled):active+label::before {
   background-color: #b3d7ff;
   border-color: #b3d7ff;
 }
