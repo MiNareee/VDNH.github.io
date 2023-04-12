@@ -372,4 +372,17 @@ padding: 70px 20px 0px 64px;
     margin-right: auto;
 
 }
+.group {
+	white-space: nowrap;
+}
+.group-iteam{
+	white-space: normal;	
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+	background: #fff2e1;
+}
+.group.group-iteam:first-child {
+	margin-right: 4%;
+}
 
