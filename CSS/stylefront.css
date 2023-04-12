@@ -366,8 +366,10 @@ padding: 70px 20px 0px 64px;
     border-left: 14px solid #ff5a00;
     border-bottom: 7px solid transparent;
 }
-.square {
-    width: 120px;
-    height: 120px;
-    background: #f447ff;
-}
+
+.kvadrat
+        {
+         background:  #ccc;
+         width: 150px; 
+         padding: 5px;
+        }
