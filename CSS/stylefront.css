@@ -414,11 +414,24 @@ body {
 	height: 80px;
 	margin-top: -80px;
 }
-.fronter{
-	background-color:#C16F6F;
+.fonter{
+width: 1841px;
+height: 229px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 43px;
+
+color: #000000;
+}
+.vur{
+		background-color:#C16F6F;
 width: 1920px;
 height: 413px;
 border-radius: 65px;
 }
+
 
 
