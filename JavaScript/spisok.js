@@ -1,15 +1,9 @@
-$('.toggle').click(function(e) {
-  	e.preventDefault();
+$('form').on('submit',function(e){
+  e.preventDefault();
+  var but = $(this).find('[type="submit"]').toggleClass('sending').blur();
   
-    var $this = $(this);
+  setTimeout(function(){
+     but.removeClass('sending').blur();
+  },4500);
   
-    if ($this.next().hasClass('show')) {
-        $this.next().removeClass('show');
-        $this.next().slideUp(350);
-    } else {
-        $this.parent().parent().find('li .inner').removeClass('show');
-        $this.parent().parent().find('li .inner').slideUp(350);
-        $this.next().toggleClass('show');
-        $this.next().slideToggle(350);
-    }
-});
+})
