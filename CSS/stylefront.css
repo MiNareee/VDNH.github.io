@@ -410,10 +410,15 @@ body {
 	min-height: 100%;
 	padding-bottom: 90px;
 }
-.footer {
+.end {
 	height: 80px;
 	margin-top: -80px;
+}
+.fronter{
 	background-color:#C16F6F;
+width: 1920px;
+height: 413px;
+border-radius: 65px;
 }
 
 
