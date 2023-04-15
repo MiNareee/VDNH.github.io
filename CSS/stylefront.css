@@ -391,9 +391,10 @@ padding: 70px 20px 0px 64px;
 	height: 650px;
 }
 .kvadrat{
-	margin-left: -80px;
+	position: relative; 
+	left: 100px;
 width: 750px;
-height: 800px;
+height: 900px;
 
 background: #E6D9C8;
 }
