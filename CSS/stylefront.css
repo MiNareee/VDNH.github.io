@@ -290,7 +290,7 @@ text-align: center;
 color: #000000;
 
 }
-card-titlemin{
+.card-titlemin{
 	width: 381.16px;
 	height: 32.42px;
 font-family: 'Montserrat';
@@ -314,7 +314,7 @@ text-align: center;
 color: #000000;
 }
 .frame{
-	background-color:#EDC8C8;
+	background-color:#EDC8C8; 
 	width: 385.43px;
 	height: 5.75px;
 	border-radius: 2px;
@@ -350,12 +350,12 @@ padding: 70px 20px 0px 140px;
 
 
 .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
-  border-color: #b3d7ff;
+  border-color: #CB9F60;
 }
 /* стили для активного состояния чекбокса (при нажатии на него) */
 .custom-checkbox:not(:disabled):active+label::before {
-  background-color: #b3d7ff;
-  border-color: #b3d7ff;
+  background-color: #F6BD66;
+  border-color: #F6BD66;
 }
 /* стили для чекбокса, находящегося в фокусе */
 .custom-checkbox:focus+label::before {
@@ -363,7 +363,7 @@ padding: 70px 20px 0px 140px;
 }
 /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
 .custom-checkbox:focus:not(:checked)+label::before {
-  border-color: #80bdff;
+  border-color: #6F542C;
 }
 /* стили для чекбокса, находящегося в состоянии disabled */
 .custom-checkbox:disabled+label::before {
@@ -372,12 +372,13 @@ padding: 70px 20px 0px 140px;
 .triangle {
     width: 0;
     height: 0;
-    border-top: 7px solid transparent;
-    border-left: 14px solid #ff5a00;
-    border-bottom: 7px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: 12px solid #E4C393;
+    border-bottom: 8px solid transparent;
     position: relative; 
-	left: 650px;
+	left: 600px;
 	top: 10px;
+	
 }
 .map{
     margin-left: auto;
@@ -403,7 +404,7 @@ padding: 70px 20px 0px 140px;
 .obvod{
 	position: relative; 
 	left: 600px;
-	background-color:#E5D9C8;
+	background-color:#CB9F60;
 	width: 650px; 
 	height: 650px;
 }
@@ -454,5 +455,25 @@ border-radius: 65px;
 	padding: 25x;
 }
 
+}
+.klic {
+  min-width: 100px;
+  font-family: 'Montserrat';
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #CB9F60;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
+.klic:hover {
+  background: #B18C56;
+}
 
+.klic:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #F6BD66;
+}
