@@ -335,9 +335,7 @@ color: #000000;
 padding: 70px 20px 0px 64px;
 	
 }
-.group{
-	padding: 50px 20px 0px 300px;
-}
+
 
 .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
   border-color: #b3d7ff;
@@ -392,7 +390,7 @@ padding: 70px 20px 0px 64px;
 }
 .kvadrat{
 	position: relative; 
-	left: 100px;
+	left: 400px;
 width: 750px;
 height: 900px;
 
