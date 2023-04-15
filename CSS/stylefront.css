@@ -384,16 +384,7 @@ padding: 70px 20px 0px 64px;
 .group.group-iteam:first-child {
 	margin-right: 10%;
 }
-.end{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: #C16F6F;
-	
-}
-.fronter{
-}
+
 .obvod{
 	background-color:#E5D9C8;
 	width: 650px; 
@@ -404,6 +395,23 @@ width: 650px;
 height: 700px;
 
 background: #E6D9C8;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+.main {
+	box-sizing: border-box;
+	min-height: 100%;
+	padding-bottom: 90px;
+}
+.footer {
+	height: 80px;
+	margin-top: -80px;
 }
 
 
