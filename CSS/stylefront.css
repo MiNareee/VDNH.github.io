@@ -364,7 +364,8 @@ padding: 70px 20px 0px 64px;
     border-left: 14px solid #ff5a00;
     border-bottom: 7px solid transparent;
     position: relative; 
-	left: 400px;
+	left: 450px;
+	top: 10px;
 }
 .map{
     margin-left: auto;
@@ -389,7 +390,7 @@ padding: 70px 20px 0px 64px;
 
 .obvod{
 	position: relative; 
-	left: 625px;
+	left: 575px;
 	background-color:#E5D9C8;
 	width: 650px; 
 	height: 650px;
