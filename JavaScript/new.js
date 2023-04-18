@@ -216,6 +216,7 @@ console.log('Now',TmeNov)
 	let mnTrass = 1000000000000
 	var bestT = []
 	var lktr= []
+	let right = true
 	var mas = new Array(s);
 	for (var i = 0; i < mas.length; i++) {
 		mas[i] = new Array();
@@ -356,7 +357,8 @@ console.log('Now',TmeNov)
 		})
 }
 if (TmeOut.length!=0) {
- if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
+ //if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
+	if (right){
    for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
@@ -494,7 +496,8 @@ if (TmeOut.length!=0) {
 }
 }
 if (TmeNov.length!=0){
-  if (confirm('Данные точки ещё не открыты:'+ TmeNov +'Всё-ровно построить маршрут?')){
+ // if (confirm('Данные точки ещё не открыты:'+ TmeNov +'Всё-ровно построить маршрут?')){
+	if (right){
    for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
