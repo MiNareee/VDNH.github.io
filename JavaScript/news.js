@@ -225,7 +225,6 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 		}
 	}
   if ((TmeNov.length==0)&&(TmeOut.length==0)){
-    if (rig){
 	for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
@@ -356,13 +355,10 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
     // Добавление маршрута на карту.
     mymap.geoObjects.add(multiRoute);
 		})
-  }else{
-    console.log(56)
   }
   }
   if (TmeOut.length!=0) {
- //if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
-	if (rig==true){
+ if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
 	  for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
@@ -494,12 +490,11 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
     mymap.geoObjects.add(multiRoute);
 		})
   }else{
-    console.log(56)
+    $('input:checkbox').each(function() { this.checked = false; });
   }
   }
 	 if (TmeNov.length!=0) {
- //if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
-	if (rig==true){
+ if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
 	  for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
@@ -631,7 +626,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
     mymap.geoObjects.add(multiRoute);
 		})
   }else{
-    console.log(56)
+    $('input:checkbox').each(function() { this.checked = false; });
   }
   }
 }
