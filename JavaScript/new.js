@@ -189,7 +189,7 @@ function alerted(){
 	var TmeNov=[]
 	let Time_Right=0
 	for (let i=0;i<fs.length;i++){
-  let Time_Now=['Сб','06:20']
+  let Time_Now=['Сб','10:20']
   let Timers=fs[i]
   Time_Right=TimeOclock(Time_Now,Timers)
   if (Time_Right<0){
