@@ -362,7 +362,144 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
   }
   if (TmeOut.length!=0) {
  //if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
-	if (rig){
+	if (rig==true){
+	  for (let fg=0; fg<Ages;fg++){
+		var td = new Array(ant)
+		for (var i = 0; i < ant; i++) {
+			td[i]=new Array();
+			for (j=0; j<s; j++){
+				td[i][j]=0;
+			}
+		}
+		for (let o=0; o<ant;o++){
+			var kf = []
+			var antROUTE=[]
+			let from_city=0
+			antROUTE.push(from_city)
+			var Zero = new Array(s)
+			for (var i = 0; i < s; i++) {
+				Zero[i]=new Array()
+				for (j=0; j<s; j++){
+					Zero[i][j]=0;
+				}
+			}
+			for (let k=0; k<s;k++){
+				let Sum = 0 
+				
+				for (let lfg=0; lfg<a[from_city].length;lfg++){
+					if (antROUTE.indexOf(lfg)==-1){
+						Sum=Sum+((10000-a[from_city][lfg])**B*(mas[from_city][lfg])**A)
+					}
+				}
+				kf.push(Sum)
+				for (let j=0; j<a[from_city].length;j++){
+					if (antROUTE.indexOf(j)==-1){
+						let lk=(10000-a[from_city][j])**B*(mas[from_city][j])**A
+						if (kf[k]!=0){
+							Zero[from_city][j]=lk/kf[k]
+						}else{
+							Zero[from_city][j]=1
+						}
+					}
+				}
+				if (antROUTE.length!=s){
+					let isNotChosen = true
+                                        while (isNotChosen){
+						var rand = Math.random()
+						for (p=0;p<Zero[from_city].length;p++){
+							if (Zero[from_city][p] >= rand){
+								let indexi=0
+								for (i=0;i<Zero[from_city].length;i++){
+									if (Zero[from_city][p]==Zero[from_city][i]){
+										indexi=i
+									}
+								}
+								td[o][k+1]=indexi
+								from_city=indexi
+								antROUTE.push(from_city)
+								isNotChosen = false
+								break
+							}
+						}
+					}
+				}
+			}
+		}
+		for (ih=0;ih<mas.length;ih++){
+			for (jh=0;jh<mas[ih].length;jh++){
+				mas[ih][jh]=mas[ih][jh]*ji
+			}
+		}
+		for (i=0;i<(td.length-1);i++){
+			let dsd=0
+                        var Trass=[]
+                        var TimeWR=[]
+                        let TimeW=0
+                        for (j=0;j<(td[i].length-1);j++){
+				Trass.push(td[i][j])
+                                if (td[i][j+1]==td[i][s-1]){
+					Trass.push(td[i][j+1])
+				}
+				fr=td[i][j]
+				fr1=td[i][j+1]
+                                dsd=dsd+a[fr][fr1]
+			}
+                        let tic=dsd/50*60
+                        TimeW=tic
+                        TimeWR.push(TimeW)
+                        let Sumr=0
+                        for (yt=0; yt<TimeWR.lenght; yt++){
+				Sumr=Sumr+TimeWR[yt]
+			}
+                        if  (dsd<mnTrass){
+				mnTrass=dsd
+				bestT=Trass             
+			}
+                        let L=q/dsd
+                        for (klo=0;klo<(td[i].length);klo++){
+				//if (Sumr<=TimeOclock(TimeAll,Time)){
+				mas[fr][fr1]=mas[fr][fr1]+L
+                                mas[fr1][fr]=mas[fr1][fr]+L
+			//}
+			}
+		}
+	}
+	console.log(mnTrass, bestT,TimeWR)
+	for (let okl=0;okl<s;okl++){
+		lktr.push(fs[bestT[okl]][3])
+	
+        }
+	console.log(lktr) 
+    // Создание экземпляра маршрута.
+	ymaps.ready(function () {
+    // Построение маршрута на общественном транспорте.
+    let mymap = new ymaps.Map('map', {
+        center: [55.751574, 37.573856],
+        zoom: 18,
+        controls: ['largeMapDefaultSet']
+    });
+    let multiRoute = new ymaps.multiRouter.MultiRoute({
+        referencePoints: lktr,
+        params: {
+            // Тип маршрута: на общественном транспорте.
+            routingMode: "masstransit"  
+        }
+    }, {
+        // Автоматически устанавливать границы карты так,
+        // чтобы маршрут был виден целиком.
+        boundsAutoApply: true
+    });
+
+    // Добавление маршрута на карту.
+    mymap.geoObjects.add(multiRoute);
+		})
+  }else{
+    console.log(56)
+  }
+  }
+	 if (TmeNov.length!=0) {
+ //if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
+	if (rig==true){
 	  for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
