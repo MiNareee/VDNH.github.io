@@ -356,7 +356,6 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
     mymap.geoObjects.add(multiRoute);
 		})
   }
-  }
   if (TmeOut.length!=0) {
  //if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
 	  if (rig){
@@ -491,7 +490,8 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
     mymap.geoObjects.add(multiRoute);
 		})
   }else{
-    $('input:checkbox').each(function() { this.checked = false; });
+   // $('input:checkbox').each(function() { this.checked = false; });
+	  console.log(10)
   }
   }
 	 if (TmeNov.length!=0) {
@@ -628,7 +628,8 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
     mymap.geoObjects.add(multiRoute);
 		})
   }else{
-    $('input:checkbox').each(function() { this.checked = false; });
+  //  $('input:checkbox').each(function() { this.checked = false; });
+	  console.log(10)
   }
   }
 }
