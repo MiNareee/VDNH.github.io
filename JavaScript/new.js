@@ -178,6 +178,7 @@ function alerted(){
 	$('input:checkbox:checked').each(function() {
 	checked.push($(this).val());
 	});
+	console.log(checked)
 	var fs=[]
 	for(let i=0;i<checked.length;i++){
 		let t = checked[i]-1
@@ -208,6 +209,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 	let s = a.length
 	let A = 1
 	let B = 1.4
+	let rig=true
 	let ji = 0.64 
 	var d = []
 	let Ages = 150
@@ -357,7 +359,8 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 		})
 }
 if (TmeOut.length!=0) {
- if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
+ //if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
+	if (rig){
    for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
@@ -497,7 +500,8 @@ if (TmeOut.length!=0) {
 }
 
 if (TmeNov.length!=0){
-if (confirm('Данные точки ещё не открыты:'+ TmeNov +'Всё-ровно построить маршрут?')){
+//if (confirm('Данные точки ещё не открыты:'+ TmeNov +'Всё-ровно построить маршрут?')){
+	if (rig){
    for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
