@@ -91,6 +91,7 @@ function distance(a){
   return Dict 
 }
 function TimeOclock(Time,TimeAll){
+  console.log(TimeAll)
   var week=['Пн','Вт','Ср','Чт','Пт','Сб','Вс']
   let t=String(Time[1])
   let Times = 0
@@ -183,12 +184,11 @@ function alerted(){
 		let t = checked[i]-1
 		fs.push(ltry[t])
 	}
-	fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 	var TmeOut=[]
 	var TmeWork=[]
 	var TmeNov=[]
 	let Time_Right=0
-	for (let i=0;i<ltry.length;i++){
+	for (let i=0;i<fs.length;i++){
   let Time_Now=['Сб','12:20']
   let Timers=fs[i]
   Time_Right=TimeOclock(Time_Now,Timers)
@@ -204,6 +204,7 @@ function alerted(){
 console.log('Work',TmeWork)
 console.log('Out',TmeOut)
 console.log('Now',TmeNov)
+fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 	var a=distance(fs)
 	let s = a.length
 	let A = 1
@@ -216,7 +217,7 @@ console.log('Now',TmeNov)
 	let mnTrass = 1000000000000
 	var bestT = []
 	var lktr= []
-	let right = true
+	rig=true
 	var mas = new Array(s);
 	for (var i = 0; i < mas.length; i++) {
 		mas[i] = new Array();
@@ -357,8 +358,7 @@ console.log('Now',TmeNov)
 		})
 }
 if (TmeOut.length!=0) {
- //if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
-	if (right){
+ if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
    for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
@@ -490,14 +490,15 @@ if (TmeOut.length!=0) {
     mymap.geoObjects.add(multiRoute);
 		})
 }else{
-   $('button').click(function() {
+  $('button').click(function() {
   $('input:checked').prop('checked', false);
+  console.log(0)
+});
 }
 }
-}
+
 if (TmeNov.length!=0){
- // if (confirm('Данные точки ещё не открыты:'+ TmeNov +'Всё-ровно построить маршрут?')){
-	if (right){
+if (confirm('Данные точки ещё не открыты:'+ TmeNov +'Всё-ровно построить маршрут?')){
    for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
@@ -629,11 +630,11 @@ if (TmeNov.length!=0){
     mymap.geoObjects.add(multiRoute);
 		})
 }else{
-   $('button').click(function() {
+  $('button').click(function() {
   $('input:checked').prop('checked', false);
+ console.log(0)
+});
 }
 }
 }
-}
-
   
