@@ -187,18 +187,18 @@ function alerted(){
 	var TmeOut=[]
 	var TmeWork=[]
 	var TmeNov=[]
-	let kt=0
+	let Time_Right=0
 	for (let i=0;i<ltry.length;i++){
-  let tr=['Сб','12:20']
-  let gt=ltry[i]
-  kt=TimeOclock(tr,gt)
-  if (kt<0){
-    TmeOut.push(ltry[i][0])
-  } else if (kt==false){
-    TmeNov.push(ltry[i][0])
+  let Time_Now=['Сб','12:20']
+  let Timers=fs[i]
+  Time_Right=TimeOclock(Time_Now,Timers)
+  if (Time_Right<0){
+    TmeOut.push(fs[i][0])
+  } else if (Time_Right==false){
+    TmeNov.push(fs[i][0])
   }else{
-  TmeWork.push(ltry[i][0])
-  TmeWork.push(kt)
+  TmeWork.push(fs[i][0])
+  TmeWork.push(Time_Right)
 }
 }
 console.log('Work',TmeWork)
@@ -634,4 +634,3 @@ if (TmeNov.length!=0){
 }
 
   
-	
