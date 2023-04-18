@@ -61,6 +61,35 @@ var ltry=[[1, 'Фонтан Дружбы народов', 'Главный фон
 [61, 'Гаража особого назначения ФСО России', 'В музее представлены легендарные машины лидеров Российской империи, Советского Союза и Российской Федерации.', [55.83595467350419,37.622379542991666], ['Пн', 'Выходной','Вт—Вс', '11:00—20:00'],'30', 'https://a.d-cd.net/8UDSaqDN0EftPfnqSt9kbr4BeDU-1920.jpg', 'Входной билет: от 550 руб.Льготный билет: от 300 руб.'],
 [62, 'Центр национальных конных традиций', 'Центр национальных конных традиций – это уникальная площадка мирового уровня для демонстрации конного достояния России, где гармонично сочетается спорт, культура, образование, коневодство и туризм.', [55.83827921235873,37.623388367754984], ['Пн', 'Выходной','Вт—Вс', '11:00—20:00'],'30', 'https://i.timeout.ru/pix/441731.jpeg', 'Стандарт: от 560.Есть льготы'],
 [63, 'Городская ферма', 'Не покидая пределов Москвы, здесь в любую погоду можно скрыться от городской суеты и познакомиться с фермерской жизнью, традициями и симпатичными, ухоженными обитателями, наполнить день радостью творчества на семейном мастер-классе или оценить обеденное меню в кафе «Ферма».', [55.840198954853165,37.627411094392876], ['Пн-Пт', '10:30—19:00','Сб-Вс', '10:30—20:00'],'30', 'https://madeinfuture.ru/img/174/ferma-vdnh2.jpg', 'Пн-Пт: от 600 руб.Есть льготы']]
+function distance(a){ 
+  var d=[] 
+  for (let i=0; i < a.length;i++){
+    d.push(a[i][3])
+  }
+  var Dict = new Array(a.length)
+  for ( let j = 0; j < a.length; j++) {
+       Dict[j]=new Array()
+      for (z=0; z<a.length; z++){
+        Dict[j][z]=0
+      }
+  }
+  for (let k=0; k < Dict.length;k++){
+    for (let t=0; t < Dict.length;t++){
+      var r=d[t]
+      var b=d[k]
+      lj=(b[0]-r[0])*111.1
+      let xz=(b[1]-r[1])*111.1
+      let u=Math.sqrt(xz**2+lj**2)
+      if (k!=t){
+        Dict[k][t]=Math.round(u*1000)
+        Dict[t][k]=Math.round(u*1000)
+      }else{
+        Dict[k][t]=0
+      }
+    }
+  }
+  return Dict 
+}
 function TimeOclock(Time,TimeAll){
   var week=['Пн','Вт','Ср','Чт','Пт','Сб','Вс']
   let t=String(Time[1])
@@ -143,35 +172,6 @@ function TimeOclock(Time,TimeAll){
 }
 }
 }
-function distance(a){ 
-  var d=[] 
-  for (let i=0; i < a.length;i++){
-    d.push(a[i][3])
-  }
-  var Dict = new Array(a.length)
-  for ( let j = 0; j < a.length; j++) {
-       Dict[j]=new Array()
-      for (z=0; z<a.length; z++){
-        Dict[j][z]=0
-      }
-  }
-  for (let k=0; k < Dict.length;k++){
-    for (let t=0; t < Dict.length;t++){
-      var r=d[t]
-      var b=d[k]
-      lj=(b[0]-r[0])*111.1
-      let xz=(b[1]-r[1])*111.1
-      let u=Math.sqrt(xz**2+lj**2)
-      if (k!=t){
-        Dict[k][t]=Math.round(u*1000)
-        Dict[t][k]=Math.round(u*1000)
-      }else{
-        Dict[k][t]=0
-      }
-    }
-  }
-  return Dict 
-}
 function alerted(){
 	var checked = [];
 	$('input:checkbox:checked').each(function() {
@@ -184,6 +184,26 @@ function alerted(){
 		fs.push(ltry[t])
 	}
 	fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
+	var TmeOut=[]
+	var TmeWork=[]
+	var TmeNov=[]
+	let kt=0
+	for (let i=0;i<ltry.length;i++){
+  let tr=['Сб','12:20']
+  let gt=ltry[i]
+  kt=TimeOclock(tr,gt)
+  if (kt<0){
+    TmeOut.push(ltry[i][0])
+  } else if (kt==false){
+    TmeNov.push(ltry[i][0])
+  }else{
+  TmeWork.push(ltry[i][0])
+  TmeWork.push(kt)
+}
+}
+console.log('Work',TmeWork)
+console.log('Out',TmeOut)
+console.log('Now',TmeNov)
 	var a=distance(fs)
 	let s = a.length
 	let A = 1
@@ -203,25 +223,8 @@ function alerted(){
 			mas[i][j]=0.2;
 		}
 	}
-	var TmeOut=[]
-	var TmeWork=[]
-	var TmeNov=[]
-	let Time_Right=0
-	for (let i=0;i<fs.length;i++){
-  let Time_Now=['Сб','10:20']
-  let gt=fs[i]
-  Time_Right=TimeOclock(Time_Now,gt)
-  if (Time_Right<0){
-    TmeOut.push(fs[i][1])
-  } else if (Time_Right==false){
-    TmeNov.push(fs[i][1])
-  }else{
-  TmeWork.push(fs[i][1])
-  TmeWork.push(Time_Right)
-}
-}
-if ((TmeOut.length==0) && (TmeNov.length==0)){
-  for (let fg=0; fg<Ages;fg++){
+	if ((TmeNov.length==0)&&(TmeOut.length==0)){
+	for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
 			td[i]=new Array();
@@ -351,9 +354,8 @@ if ((TmeOut.length==0) && (TmeNov.length==0)){
     // Добавление маршрута на карту.
     mymap.geoObjects.add(multiRoute);
 		})
-
 }
-if (TmeOut.length!=0){
+if (TmeOut.length!=0) {
  if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
    for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
@@ -485,18 +487,15 @@ if (TmeOut.length!=0){
     // Добавление маршрута на карту.
     mymap.geoObjects.add(multiRoute);
 		})
- }else{
-    $('button').click(function() {
+}else{
+   $('button').click(function() {
   $('input:checked').prop('checked', false);
-});
- }
 }
-  //Если человек выбирает да, маршрут строится несмотря на время данных точек, лишь на время ещё открытых
-  //Если человек выбирает нет, то маршрут не строится, а значение чекбоксов обнуляется
-
+}
+}
 if (TmeNov.length!=0){
   if (confirm('Данные точки ещё не открыты:'+ TmeNov +'Всё-ровно построить маршрут?')){
-    for (let fg=0; fg<Ages;fg++){
+   for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
 			td[i]=new Array();
@@ -626,14 +625,13 @@ if (TmeNov.length!=0){
     // Добавление маршрута на карту.
     mymap.geoObjects.add(multiRoute);
 		})
-  }else{
-    $('button').click(function() {
+}else{
+   $('button').click(function() {
   $('input:checked').prop('checked', false);
-  //Если человек выбирает да, то маршрут строится так, чтобы эти точки были в конце всего маршрута
-  //Если человеквыбирает нет, то маршрут не строится, а значение чекбоксов обнуляется
-});
 }
 }
 }
-	
+}
+
+  
 	
