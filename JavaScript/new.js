@@ -218,7 +218,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 	let mnTrass = 1000000000000
 	var bestT = []
 	var lktr= []
-	rig=true
+	let rig=true
 	var mas = new Array(s);
 	for (var i = 0; i < mas.length; i++) {
 		mas[i] = new Array();
