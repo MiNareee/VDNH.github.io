@@ -639,6 +639,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 	//  console.log(10)
 	  $('#clik').click(function(){
 	$('body input:checkbox').prop('checked', false);
+  });
   }
-  }
+}
 }
