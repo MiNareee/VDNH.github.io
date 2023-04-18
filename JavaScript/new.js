@@ -359,8 +359,8 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 		})
 }
 if (TmeOut.length!=0) {
- //if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
-	if (rig){
+ if (confirm('Данные точки уже закрыты:'+ TmeOut + 'Всё-ровно построить маршрут?')){
+	//if (kig){
    for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
@@ -500,8 +500,8 @@ if (TmeOut.length!=0) {
 }
 
 if (TmeNov.length!=0){
-//if (confirm('Данные точки ещё не открыты:'+ TmeNov +'Всё-ровно построить маршрут?')){
-	if (rig){
+  if (confirm('Данные точки ещё не открыты:'+ TmeNov +'Всё-ровно построить маршрут?')){
+	//if (rig){
    for (let fg=0; fg<Ages;fg++){
 		var td = new Array(ant)
 		for (var i = 0; i < ant; i++) {
