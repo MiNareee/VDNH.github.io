@@ -213,7 +213,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 	let Ages = 150
 	let q = 8
 	let ant=25
-  let rig=true
+  let rig=false
 	let mnTrass = 1000000000000
 	var bestT = []
 	var lktr= []
