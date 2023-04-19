@@ -338,7 +338,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 		}
 	}
 	}
-	console.log(mnTrass, bestT,TimeWR)
+	console.log(mnTrass, bestT)
 	for (let okl=0;okl<s;okl++){
 		lktr.push(fs[bestT[okl]][3])
 	
@@ -486,7 +486,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 		}
 	}
 	}
-	console.log(mnTrass, bestT,TimeWR)
+	console.log(mnTrass, bestT)
 	for (let okl=0;okl<s;okl++){
 		lktr.push(fs[bestT[okl]][3])
 	
@@ -641,7 +641,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 		}
 	}
 	}
-	console.log(mnTrass, bestT,TimeWR)
+	console.log(mnTrass, bestT)
 	for (let okl=0;okl<s;okl++){
 		lktr.push(fs[bestT[okl]][3])
 	
