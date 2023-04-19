@@ -188,7 +188,7 @@ function alerted(){
 	var TmeNov=[]
 	let Time_Right=0
 	for (let i=0;i<fs.length;i++){
-  let Time_Now=['Сб','06:20']
+  let Time_Now=['Чт','10:20']
   let Timers=fs[i]
   Time_Right=TimeOclock(Time_Now,Timers)
   if (Time_Right<0){
@@ -300,7 +300,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 				Trass.push(td[i][j+1])
 				}
       }
-      var Timesis=['Сб','11:20']
+      var Timesis=['Чт','10:20']
 			      let Timersi=(Timesis[1])
 			      let Timersisi=Number(Timersi.slice(0, 2)) * 60 + Number(Timersi.slice(3, 5)) 
 			      let dsd=0
@@ -448,7 +448,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 				Trass.push(td[i][j+1])
 				}
       }
-      var Timesis=['Сб','11:20']
+      var Timesis=['Чт','10:20']
 			      let Timersi=(Timesis[1])
 			      let Timersisi=Number(Timersi.slice(0, 2)) * 60 + Number(Timersi.slice(3, 5)) 
 			      let dsd=0
@@ -603,7 +603,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 				Trass.push(td[i][j+1])
 				}
       }
-      var Timesis=['Сб','11:20']
+      var Timesis=['Чт','10:20']
 			      let Timersi=(Timesis[1])
 			      let Timersisi=Number(Timersi.slice(0, 2)) * 60 + Number(Timersi.slice(3, 5)) 
 			      let dsd=0
