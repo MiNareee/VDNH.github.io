@@ -292,7 +292,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 				mas[ih][jh]=mas[ih][jh]*ji
 			}
 		}
-		for (i=0;i<(td.length);i++){
+			for (i=0;i<(td.length);i++){
    var Trass=[]
       for (j=0;j<(td[i].length-1);j++){
 				Trass.push(td[i][j])
@@ -301,8 +301,8 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 				}
       }
       var Timesis=['Сб','11:20']
-			      let Timersi=(Time_Now[1])
-			      Timersisi=Number(Timersi.slice(0, 2)) * 60 + Number(Timersi.slice(3, 5)) 
+			      let Timersi=(Timesis[1])
+			      let Timersisi=Number(Timersi.slice(0, 2)) * 60 + Number(Timersi.slice(3, 5)) 
 			      let dsd=0
 			      let rastr =0
 			      let hjk=0
@@ -440,7 +440,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 				mas[ih][jh]=mas[ih][jh]*ji
 			}
 		}
-		for (i=0;i<(td.length);i++){
+			for (i=0;i<(td.length);i++){
    var Trass=[]
       for (j=0;j<(td[i].length-1);j++){
 				Trass.push(td[i][j])
@@ -449,8 +449,8 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 				}
       }
       var Timesis=['Сб','11:20']
-			      let Timersi=(Time_Now[1])
-			      Timersisi=Number(Timersi.slice(0, 2)) * 60 + Number(Timersi.slice(3, 5)) 
+			      let Timersi=(Timesis[1])
+			      let Timersisi=Number(Timersi.slice(0, 2)) * 60 + Number(Timersi.slice(3, 5)) 
 			      let dsd=0
 			      let rastr =0
 			      let hjk=0
@@ -595,7 +595,7 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 				mas[ih][jh]=mas[ih][jh]*ji
 			}
 		}
-		for (i=0;i<(td.length);i++){
+			for (i=0;i<(td.length);i++){
    var Trass=[]
       for (j=0;j<(td[i].length-1);j++){
 				Trass.push(td[i][j])
@@ -604,8 +604,8 @@ fs.unshift(['','','',[55.82626315161884,37.63755969721379]])
 				}
       }
       var Timesis=['Сб','11:20']
-			      let Timersi=(Time_Now[1])
-			      Timersisi=Number(Timersi.slice(0, 2)) * 60 + Number(Timersi.slice(3, 5)) 
+			      let Timersi=(Timesis[1])
+			      let Timersisi=Number(Timersi.slice(0, 2)) * 60 + Number(Timersi.slice(3, 5)) 
 			      let dsd=0
 			      let rastr =0
 			      let hjk=0
